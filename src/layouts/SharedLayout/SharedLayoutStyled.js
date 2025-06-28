@@ -1,17 +1,19 @@
 import styled from "@emotion/styled";
 
-import bgMobile from "../../assets/images/bg-mobile.png";
-
 export const SharedLayoutCon = styled.div`
-  height: 100vh;
-
   padding-left: 24px;
   padding-right: 24px;
 
-  align-content: center;
+  @media (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
 
-  background-color: #0f1b3d;
+    padding: 0;
 
-  background-image: url(${bgMobile});
-  background-size: cover;
+    & > *:first-of-type {
+      margin-right: 32px;
+    }
+  }
 `;

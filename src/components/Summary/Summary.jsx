@@ -18,6 +18,7 @@ const Summary = () => {
       <SC.LeftCon>
         <h4>185</h4>
         <p>gb left</p>
+        <SC.Triangle></SC.Triangle>
       </SC.LeftCon>
     </SC.SummaryCon>
   );

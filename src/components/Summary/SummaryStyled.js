@@ -13,6 +13,13 @@ export const SummaryCon = styled.div`
 
   border-radius: 12px;
 
+  @media (min-width: 1280px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   & > h3 {
     margin-bottom: 16px;
 
@@ -34,6 +41,10 @@ export const SummaryCon = styled.div`
 
     background-color: #0c122c;
     border-radius: 15px;
+
+    @media (min-width: 1280px) {
+      width: 540px;
+    }
   }
 
   .scale-bar {
@@ -75,7 +86,7 @@ export const LeftCon = styled.div`
   bottom: 0;
   left: 50%;
 
-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
 
   width: 55%;
 
@@ -91,6 +102,20 @@ transform: translate(-50%, 50%);
 
   border-radius: 12px;
 
+  @media (min-width: 1280px) {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    transform: translate(40%, -60%);
+
+    width: 179px;
+    height: 72px;
+
+    border-bottom-right-radius: 0;
+  }
+
   & > h4 {
     margin-right: 8px;
 
@@ -104,5 +129,25 @@ transform: translate(-50%, 50%);
     font-weight: 700;
 
     color: #979797;
+  }
+`;
+
+export const Triangle = styled.div`
+  display: none;
+
+  width: 0;
+  height: 0;
+  border-top: 23px solid white;
+  border-left: 23px solid transparent;
+
+  @media (min-width: 1280px) {
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    transform: translate(0, 100%);
+
+    display: block;
   }
 `;

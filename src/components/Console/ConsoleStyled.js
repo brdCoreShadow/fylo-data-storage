@@ -14,6 +14,12 @@ export const ConsoleCon = styled.div`
   border-radius: 12px;
 
   border-top-right-radius: 128px;
+
+  @media (min-width: 1280px){
+    margin-bottom: 0;
+
+    padding-right: 132px;
+  }
 `;
 
 export const OptionList = styled.ul`
